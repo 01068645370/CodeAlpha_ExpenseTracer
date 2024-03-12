@@ -1,0 +1,141 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screen */
+@media(min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+/* medium */
+@media(min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+/* large */
+@media(min-width:1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+/* end global rules */
+.expenseTracker .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.expenseTracker .main-title {
+    text-align: center;
+    padding: 15px;
+    background-color: blueviolet;
+    color: white;
+}
+
+/* .transition .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: red;
+} */
+.balance {
+    width: fit-content;
+    margin: 10px auto 30px;
+}
+
+.balance span {
+    display: block;
+}
+
+.balance .name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.balance .number {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.transition .K-money {
+    display: flex;
+    background-color: white;
+    padding: 20px 30px;
+    box-shadow: 0 0 23px rgb(0 0 0 / 21%);
+    position: relative;
+    margin: 20px 0;
+}
+
+.transition .K-money::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 70%;
+    width: 1px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.transition .K-money .box {
+    padding: 20px;
+}
+
+.transition .K-money .box h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.transition .K-money .box span {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.transition .K-money .expense span {
+    color: red;
+}
+
+.transition .K-money .income span {
+    color: green;
+}
+
+.add .title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+form label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.add button {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media(max-width:767px) {
+    .tableShow {
+        width: 100% !important;
+    }
+}

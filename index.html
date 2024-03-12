@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Expence Tracer</title>
+</head>
+
+<body>
+    <div class="expenseTracker">
+        <h1 class="main-title">Expense Tracker</h1>
+        <div class="container">
+            <div class="transition">
+                <div class="K-money">
+                    <div class="box expense">
+                        <h2>EXPENSE</h2>
+                        <span id="expence">0$</span>
+                    </div>
+                    <div class="box income">
+                        <h2>INCOME</h2>
+                        <span id="incomeNum">0$</span>
+                    </div>
+                </div>
+
+                <div class="boxInput">
+                    <input type="text" class="form-control mb-2" placeholder="Enter your income.." id="income1">
+                    <button class="btn btn-primary" id="btnIncome">Add</button>
+                </div>
+                <div class="add">
+                    <h1 class="title">Add New Transition</h1>
+                    <form action="">
+                        <div class="desc">
+                            <label for="Description">Description :</label>
+                            <input type="text" id="Description" placeholder="Enter Text..." class="form-control mb-3">
+                        </div>
+                        <label for="Amount">Amount :</label>
+                        <input type="number" id="Amount" placeholder="Enter Amount..." class="form-control mb-3">
+                        <input type="date" class="form-control mb-3" id="date">
+                    </form>
+                    <button class="btn btn-primary" id="newTransition">make transaction</button>
+                </div>
+            </div>
+            <div class=" tableShow w-50  my-3">
+                <input type="text" placeholder="search by name .." class="form-control w-75 mx-auto my-3" id="search">
+                <table class="table text-center table-striped ">
+                    <thead class="thead-dark">
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="addrow">
+                        <!-- product -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
